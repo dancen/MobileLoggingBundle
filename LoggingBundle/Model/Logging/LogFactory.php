@@ -5,7 +5,6 @@ namespace Mobile\LoggingBundle\Model\Logging;
 use Mobile\LoggingBundle\Model\Logging\LogManager;
 use Mobile\LoggingBundle\Entity\Logger;
 
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
