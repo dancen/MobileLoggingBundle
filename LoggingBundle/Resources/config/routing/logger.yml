@@ -1,0 +1,10 @@
+logger:
+    pattern:  /
+    defaults: { _controller: "MobileLoggingBundle:Logger:index" }
+
+logger_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "MobileLoggingBundle:Logger:show" }
+
+
+

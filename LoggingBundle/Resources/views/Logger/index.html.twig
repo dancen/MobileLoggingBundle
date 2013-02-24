@@ -1,0 +1,43 @@
+{% extends 'MobileSymmetryBundle::page.html.twig' %}
+
+{% block content %} 
+
+
+<div data-role="content" style="text-align: center;">
+
+    <div class="content-secondary" style="font-size: 0.8em;">
+        <a href=""><img src='{{ asset('bundles/mobilesymmetry/images/symmetry_registry.png') }}'></a>
+    </div>
+
+
+    {% for entity in entities %}
+            
+            
+             <div data-role="collapsible" data-content-theme="c" style="font-size: 1.0em; text-align: left;">
+                    <h3>{{ entity.loglevel }} - {% if entity.createdat %}{{ entity.createdat|date('Y-m-d H:i:s') }}{% endif%} </h3>
+                    <p>Id: <a href="{{ path('logger_show', { 'id': entity.id }) }}">{{ entity.id }}</a></p>
+                    <p>Log_url:<br> {{ entity.logurl }}</p>
+                    <p>Log_ipaddress:<br> {{ entity.logipaddress }}</p>
+                    <p>Log_sid<br> {{ entity.logsid }}</p>
+                    <p>Log_commcode:<br> {{ entity.logcommcode }}</p>
+                    <p>Log_stage:<br> {{ entity.logstage }}</p>
+                    <p>Log_message:<br> {{ entity.logmessage }}</p>
+                </div>
+            
+
+    {% endfor %}
+
+
+ <div class="content-secondary" data-theme="a"><br>
+        
+                        <nav>
+                              <ul data-role="listview" data-inset="true" data-theme="d" data-dividertheme="b">
+                                        <li><a style='color: #000; text-decoration: none;' href="{{ path('symmetry_registry') }}"> See the Registry </a></li>
+                              </ul>
+			</nav>
+    </div>
+    
+</div>        
+
+{% endblock %}
+

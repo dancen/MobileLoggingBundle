@@ -1,0 +1,64 @@
+{% extends 'MobileSymmetryBundle::page.html.twig' %}
+
+{% block content %} 
+
+
+<div data-role="content" style="text-align: center;">
+
+    <div class="content-secondary" style="font-size: 0.8em;">
+        <a href=""><img src='{{ asset('bundles/mobilesymmetry/images/symmetry_registry.png') }}'></a>
+    </div>
+
+
+<table class="record_properties" width='100%'>
+    <tbody>
+        <tr>
+            <th width='200'>Id</th>
+            <td class='cell'>{{ entity.id }}</td>
+        </tr>
+        <tr>
+            <th>Log_url</th>
+            <td class='cell'>{{ entity.logurl }}</td>
+        </tr>
+        <tr>
+            <th>Log_level</th>
+            <td class='cell' style='color: #008200;font-size: 1.0em;font-weight: bold;'>{{ entity.loglevel }}</td>
+        </tr>
+        <tr>
+            <th>Log_ipaddress</th>
+            <td class='cell'>{{ entity.logipaddress }}</td>
+        </tr> 
+        <tr>
+            <th>Log_sid</th>
+            <td class='cell'>{{ entity.logsid }}</td>
+        </tr>
+        <tr>
+            <th>Log_commcode</th>
+            <td class='cell'>{{ entity.logcommcode }}</td>
+        </tr>
+        <tr>
+            <th>Log_stage</th>
+            <td class='cell'>{{ entity.logstage }}</td>
+        </tr>
+        <tr>
+            <th>Log_message</th>
+            <td class='cell'>{{ entity.logmessage }}</td>
+        </tr>
+        <tr>
+            <th>Created_at</th>
+            <td class='cell'>{{ entity.createdat|date('Y-m-d H:i:s') }}</td>
+        </tr>
+    </tbody>
+</table>
+                                             <br>
+<table>
+      <tr>
+          <td align='left' class='button'><a style='color: #000; text-decoration: none;' href="{{ path('logger') }}"> Back to the list </a></td>
+      </tr>
+  </table>
+              
+</div>        
+
+{% endblock %}
+
+
