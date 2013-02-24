@@ -9,6 +9,7 @@ class LoggerType extends AbstractType
 {
     public function buildForm(FormBuilder $builder, array $options)
     {
+        
         $builder
             ->add('log_url')
             ->add('log_level')

@@ -4,6 +4,7 @@ namespace Mobile\LoggingBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
  * Mobile\LoggingBundle\Entity\Logger
  *

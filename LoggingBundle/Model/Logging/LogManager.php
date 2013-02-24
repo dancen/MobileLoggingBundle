@@ -7,6 +7,7 @@ use Mobile\LoggingBundle\Model\Logging\LogPacker;
 use Mobile\LoggingBundle\Model\Logging\LogFactory;
 
 
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.

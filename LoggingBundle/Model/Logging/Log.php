@@ -28,8 +28,7 @@ abstract class Log {
   
   public function getDateTime(){
       return new \DateTime();
-  }
-  
+  }  
         
       
 }

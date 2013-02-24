@@ -1,6 +1,7 @@
 parameters:
 #    mobile_logging.example.class: Mobile\LoggingBundle\Example
 
+
 services:
 #    mobile_logging.example:
 #        class: %mobile_logging.example.class%

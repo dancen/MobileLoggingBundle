@@ -16,6 +16,7 @@ class LoggerController extends Controller
      * Lists all Logger entities.
      *
      */
+    
     public function indexAction()
     {
         $em = $this->getDoctrine()->getEntityManager();
